@@ -1,0 +1,115 @@
+{
+    "locations": [
+        {
+            "id": 1,
+            "address": "2200 Boston Ave.",
+            "squareFootage": 1500
+        },
+        {
+            "id": 2,
+            "address": "111 ABC Rd.",
+            "squareFootage": 1690
+        },
+        {
+            "id": 3,
+            "address": "550 Main St.",
+            "squareFootage": 700
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "Nutter Butter",
+            "price": 1.99,
+            "containsNuts": true,
+            "productTypeId": 1
+        },
+        {
+            "id": 2,
+            "name": "Sour Patch Kids",
+            "price": 3.99,
+            "containsNuts": false,
+            "productTypeId": 2
+        },
+        {
+            "id": 3,
+            "name": "Smarties",
+            "price": 0.99,
+            "containsNuts": false,
+            "productTypeId": 3
+        },
+        {
+            "id": 4,
+            "name": "Three Musketeers",
+            "price": 1.99,
+            "containsNuts": false,
+            "productTypeId": 1
+        },
+        {
+            "id": 5,
+            "name": "Peanut M&Ms",
+            "price": 2.99,
+            "containsNuts": true,
+            "productTypeId": 4
+        }
+
+    ],
+    "employees": [
+        {
+            "id": 1,
+            "name": "Tom Segura"
+        },
+        {
+            "id": 2,
+            "name": "Mark Maron"
+        },
+        {
+            "id": 3,
+            "name": "John Mulaney"
+        },
+        {
+            "id": 4,
+            "name": "Dave Chappelle"
+        }
+    ],
+    "productTypes": [
+        {
+            "id": 1,
+            "type": "candy bar"
+        },
+        {
+            "id": 2,
+            "type": "gummy"
+        },
+        {
+            "id": 3,
+            "type": "hard candy"
+        },
+        {
+            "id": 4,
+            "type": "morsels"
+        }
+    ],
+    "customers": [
+        {
+            "id": 1,
+            "name": "Barack Obama",
+            "loyaltyMember": false
+        },
+        {
+            "id": 2,
+            "name": "Donald Trump",
+            "loyaltyMember": true
+        },
+        {
+            "id": 3,
+            "name": "Bill Clinton",
+            "loyaltyMember": true
+        }
+    ],
+    "purchases": [
+        {
+
+        }
+    ]
+}
