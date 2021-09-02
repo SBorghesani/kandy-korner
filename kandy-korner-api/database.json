@@ -1,115 +1,241 @@
 {
-    "locations": [
-        {
-            "id": 1,
-            "address": "2200 Boston Ave.",
-            "squareFootage": 1500
-        },
-        {
-            "id": 2,
-            "address": "111 ABC Rd.",
-            "squareFootage": 1690
-        },
-        {
-            "id": 3,
-            "address": "550 Main St.",
-            "squareFootage": 700
-        }
-    ],
-    "products": [
-        {
-            "id": 1,
-            "name": "Nutter Butter",
-            "price": 1.99,
-            "containsNuts": true,
-            "productTypeId": 1
-        },
-        {
-            "id": 2,
-            "name": "Sour Patch Kids",
-            "price": 3.99,
-            "containsNuts": false,
-            "productTypeId": 2
-        },
-        {
-            "id": 3,
-            "name": "Smarties",
-            "price": 0.99,
-            "containsNuts": false,
-            "productTypeId": 3
-        },
-        {
-            "id": 4,
-            "name": "Three Musketeers",
-            "price": 1.99,
-            "containsNuts": false,
-            "productTypeId": 1
-        },
-        {
-            "id": 5,
-            "name": "Peanut M&Ms",
-            "price": 2.99,
-            "containsNuts": true,
-            "productTypeId": 4
-        }
-
-    ],
-    "employees": [
-        {
-            "id": 1,
-            "name": "Tom Segura"
-        },
-        {
-            "id": 2,
-            "name": "Mark Maron"
-        },
-        {
-            "id": 3,
-            "name": "John Mulaney"
-        },
-        {
-            "id": 4,
-            "name": "Dave Chappelle"
-        }
-    ],
-    "productTypes": [
-        {
-            "id": 1,
-            "type": "candy bar"
-        },
-        {
-            "id": 2,
-            "type": "gummy"
-        },
-        {
-            "id": 3,
-            "type": "hard candy"
-        },
-        {
-            "id": 4,
-            "type": "morsels"
-        }
-    ],
-    "customers": [
-        {
-            "id": 1,
-            "name": "Barack Obama",
-            "loyaltyMember": false
-        },
-        {
-            "id": 2,
-            "name": "Donald Trump",
-            "loyaltyMember": true
-        },
-        {
-            "id": 3,
-            "name": "Bill Clinton",
-            "loyaltyMember": true
-        }
-    ],
-    "purchases": [
-        {
-
-        }
-    ]
+  "locations": [
+    {
+      "id": 1,
+      "address": "2200 Boston Ave.",
+      "squareFootage": 1500
+    },
+    {
+      "id": 2,
+      "address": "111 ABC Rd.",
+      "squareFootage": 1690
+    },
+    {
+      "id": 3,
+      "address": "550 Main St.",
+      "squareFootage": 700
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Nutter Butter",
+      "price": 1.99,
+      "containsNuts": true,
+      "productTypeId": 1
+    },
+    {
+      "id": 2,
+      "name": "Sour Patch Kids",
+      "price": 3.99,
+      "containsNuts": false,
+      "productTypeId": 2
+    },
+    {
+      "id": 3,
+      "name": "Smarties",
+      "price": 0.99,
+      "containsNuts": false,
+      "productTypeId": 3
+    },
+    {
+      "id": 4,
+      "name": "Three Musketeers",
+      "price": 1.99,
+      "containsNuts": false,
+      "productTypeId": 1
+    },
+    {
+      "id": 5,
+      "name": "Peanut M&Ms",
+      "price": 2.99,
+      "containsNuts": true,
+      "productTypeId": 4
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Tom Segura",
+      "locationId": 3,
+      "manager": false,
+      "fullTime": true,
+      "hourlyRate": 10
+    },
+    {
+      "id": 2,
+      "name": "Mark Maron",
+      "locationId": 3,
+      "manager": false,
+      "fullTime": true,
+      "hourlyRate": 10
+    },
+    {
+      "id": 3,
+      "name": "John Mulaney",
+      "locationId": 1,
+      "manager": true,
+      "fullTime": true,
+      "hourlyRate": 12
+    },
+    {
+      "id": 4,
+      "name": "Dave Chappelle",
+      "locationId": 2,
+      "manager": true,
+      "fullTime": false,
+      "hourlyRate": 15
+    },
+    {
+      "name": "Nick Kroll",
+      "locationId": 1,
+      "manager": true,
+      "fullTime": false,
+      "hourlyRate": 13,
+      "id": 5
+    },
+    {
+      "name": "George Carlin",
+      "locationId": 2,
+      "manager": false,
+      "fullTime": false,
+      "hourlyRate": 25,
+      "id": 6
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1,
+      "type": "candy bar"
+    },
+    {
+      "id": 2,
+      "type": "gummy"
+    },
+    {
+      "id": 3,
+      "type": "hard candy"
+    },
+    {
+      "id": 4,
+      "type": "morsels"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "name": "Barack Obama",
+      "loyaltyMember": false,
+      "email": "barack@obama.com"
+    },
+    {
+      "id": 2,
+      "name": "Donald Trump",
+      "loyaltyMember": true,
+      "email": "donald@trump.com"
+    },
+    {
+      "id": 3,
+      "name": "Bill Clinton",
+      "loyaltyMember": true,
+      "email": "bill@clinton.com"
+    },
+    {
+      "name": "George Bush",
+      "address": "999 Texas Blvd.",
+      "email": "george@bush.com",
+      "id": 4
+    },
+    {
+      "name": "Joe Biden",
+      "address": "1200 Pennsylvania Ave.",
+      "email": "joe@biden.com",
+      "id": 5
+    },
+    {
+      "name": "Jimmy Carter",
+      "address": "100 BuildAHome Blvd.",
+      "email": "jimmy@carter.com",
+      "id": 6
+    },
+    {
+      "name": "Richard Nixon",
+      "address": "1 NotACrook Circle",
+      "email": "richard@nixon.com",
+      "id": 7
+    }
+  ],
+  "purchases": [
+    {
+      "customerId": 4,
+      "productId": 4,
+      "id": 1
+    },
+    {
+      "customerId": 4,
+      "productId": 3,
+      "id": 2
+    },
+    {
+      "customerId": 4,
+      "productId": 5,
+      "id": 3
+    },
+    {
+      "customerId": 4,
+      "productId": 3,
+      "id": 4
+    },
+    {
+      "customerId": 4,
+      "productId": 5,
+      "id": 5
+    },
+    {
+      "customerId": 4,
+      "productId": 4,
+      "id": 6
+    },
+    {
+      "customerId": 3,
+      "productId": 4,
+      "id": 7
+    },
+    {
+      "customerId": 3,
+      "productId": 5,
+      "id": 8
+    },
+    {
+      "customerId": 4,
+      "productId": 1,
+      "id": 9
+    },
+    {
+      "customerId": 2,
+      "productId": 1,
+      "id": 10
+    },
+    {
+      "customerId": 2,
+      "productId": 1,
+      "id": 11
+    },
+    {
+      "customerId": 2,
+      "productId": 1,
+      "id": 12
+    },
+    {
+      "customerId": 2,
+      "productId": 3,
+      "id": 13
+    },
+    {
+      "customerId": 7,
+      "productId": 4,
+      "id": 14
+    }
+  ],
+  "orders": []
 }
